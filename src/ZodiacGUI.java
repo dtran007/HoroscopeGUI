@@ -1,3 +1,8 @@
+/*
+ * CST338
+ * Final Project
+ * Danny Tran
+ */
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -23,6 +28,11 @@ import java.awt.BorderLayout;
 import java.util.Calendar;
 
 import java.util.GregorianCalendar;
+
+/*
+ * MVC Model
+ * ZodiacGUI is the View
+ */
 
 public class ZodiacGUI extends JFrame
 {
@@ -62,7 +72,7 @@ public class ZodiacGUI extends JFrame
       pnlCenterText = new JPanel();
       add(pnlCenterText,BorderLayout.CENTER);      
       
-      //Text Pane
+      //Text Pane --> unused
       /*
       JTextPane zPane = new JTextPane();
       zPane.setPreferredSize(new Dimension(200, 200));
@@ -147,6 +157,7 @@ public class ZodiacGUI extends JFrame
    }
 
 
+   //Threaded clock
    public void clock()
    {
       Thread clock = new Thread()
@@ -159,7 +170,7 @@ public class ZodiacGUI extends JFrame
                {
                   Calendar cal = new GregorianCalendar();
                   int day = cal.get(Calendar.DAY_OF_MONTH);
-                  int month = cal.get(Calendar.MONTH)+1; //Greg Cal starts 0
+                  int month = cal.get(Calendar.MONTH)+1; //Greg.Cal starts 0
                   int year = cal.get(Calendar.YEAR);
 
                   int second = cal.get(Calendar.SECOND);

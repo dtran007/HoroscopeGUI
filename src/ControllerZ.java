@@ -1,3 +1,9 @@
+/*
+ * CST338
+ * Final Project
+ * Danny Tran
+ */
+
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,7 +13,10 @@ import javax.swing.JTextArea;
 import java.util.Calendar;
 
 
-
+/*
+ * MVC Model
+ * ControllerZ is the Controller
+ */
 
 public class ControllerZ
 {
@@ -58,8 +67,9 @@ class EndingListener implements ActionListener
       }
 
       String myScope = HoroscopeScrapper.getHoroscope(mySign, today);
-          
+      
       ZInit.myHoroscope.pnlCenterText.removeAll();
+      
       JTextArea horoText = new JTextArea(25, 40);
       horoText.setText(myScope);
       horoText.setLineWrap(true);

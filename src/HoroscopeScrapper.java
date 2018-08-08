@@ -1,5 +1,7 @@
 /*
+ * CST338
  * Final Project
+ * Danny Tran
  */
 
 import java.io.IOException;
@@ -11,6 +13,11 @@ import org.jsoup.select.Elements;
 
 //Preconditions Note: Jsoup must be added as part of build library
 
+
+/*
+ * MVC Model
+ * HoroscopeScrapper is the Model
+ */
 
 public class HoroscopeScrapper
 {
