@@ -63,23 +63,5 @@ public class HoroscopeScrapper
          return horoscope;
       }
    }
-
-
-   /*
-    * Testing void main 
-    */
-   /*
-   public static void main(String[] args)
-   {
-
-
-
-      getHoroscope("gemini", "tuesday");
-      getHoroscope("aquarius", "wednesday");
-
-
-      System.out.println("End of Main HoroscopeScrapper");
-
-   }
-   */
+   
 }

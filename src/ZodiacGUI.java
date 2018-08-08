@@ -14,13 +14,14 @@ import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import javax.swing.border.TitledBorder;
+import javax.swing.JTextArea;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.BorderLayout;
+
+
+
 import java.util.Calendar;
-import java.util.Date;
+
 import java.util.GregorianCalendar;
 
 public class ZodiacGUI extends JFrame
@@ -30,6 +31,7 @@ public class ZodiacGUI extends JFrame
    public JPanel pnlEastButton;
    public JPanel pnlSouthClock;
    public JLabel clockLabel;
+   public JPanel pnlCenterText;
    
    public ZodiacGUI(String title)
    {
@@ -55,6 +57,10 @@ public class ZodiacGUI extends JFrame
       clock();
       setVisible(true);
       
+      
+      //pnlCenterText
+      pnlCenterText = new JPanel();
+      add(pnlCenterText,BorderLayout.CENTER);      
       
       //Text Pane
       /*
@@ -140,14 +146,6 @@ public class ZodiacGUI extends JFrame
       
    }
 
- 
-   public static void main(String[] args)
-   {
-      //Testing GUI
-      ZodiacGUI myGUI = new ZodiacGUI("Gui Title");
-      myGUI.setVisible(true);
-   }
- 
 
    public void clock()
    {
