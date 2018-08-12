@@ -1,6 +1,5 @@
 /*
- * CST338
- * Final Project
+ * HoroscopeGUI
  * Danny Tran
  */
 
@@ -56,6 +55,7 @@ public class HoroscopeScrapper
          System.out.println(title);
 
          Element horo = doc.getElementById(day);
+         System.out.println(horo.toString());
 
          Elements paragraph = horo.getElementsByTag("p");
 
@@ -69,6 +69,5 @@ public class HoroscopeScrapper
          System.out.println (ex.toString());
          return horoscope;
       }
-   }
-   
+   }   
 }

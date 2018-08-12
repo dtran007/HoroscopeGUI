@@ -1,6 +1,5 @@
 /*
- * CST338
- * Final Project
+ * HoroscopeGUI
  * Danny Tran
  */
 
@@ -62,7 +61,7 @@ class EndingListener implements ActionListener
             break;
          case 6: today = "friday";
             break;
-         default: today = "weekend";
+         default: today = "saturday"; //Sat-Sun same horoscope
             break;
       }
 

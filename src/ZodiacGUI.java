@@ -1,6 +1,5 @@
 /*
- * CST338
- * Final Project
+ * HoroscopeGUI
  * Danny Tran
  */
 
