@@ -37,6 +37,7 @@ class EndingListener implements ActionListener
       String actionCommand = e.getActionCommand();
 
       //Console Check
+      System.out.println("");
       System.out.print("Button Pressed: ");
       System.out.println(actionCommand);
 

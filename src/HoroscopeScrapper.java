@@ -55,7 +55,6 @@ public class HoroscopeScrapper
          System.out.println(title);
 
          Element horo = doc.getElementById(day);
-         System.out.println(horo.toString());
 
          Elements paragraph = horo.getElementsByTag("p");
 
